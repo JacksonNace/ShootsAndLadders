@@ -2,11 +2,23 @@
 
 //Generates 40 rand num of different values to act as the snakes and ladders
 void Board::genMove(){ 
-//endPos
-//actPos
 
+  unordered_set<int> uniqueNumbers;
+  while (uniqueNumbers.size() < 40) {
+    int num = rand() % 98 + 1;
+    uniqueNumbers.insert(num);
+  }
+  // divide first 20 into actPos
+  // divide second half into endPos
+  for (num : uniqueNumbers){
+    if (num % 2 == 0) {
 
-
+    }
+    if (num % 2 == 1) {
+      
+    }
+    
+  }  
 }    
 
 void Board::setBoard(){
