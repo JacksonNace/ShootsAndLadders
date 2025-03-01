@@ -1,3 +1,6 @@
+//I, Jackson Nace ID 2300153 worked with Hayden Vontz 2486072 on this project. Both of us are in the 8:30 section on T/TH
+
+
 #ifndef BOARD_H
 #define BOARD_H
 
@@ -29,7 +32,7 @@ class Board{
   void genMove();//Generates 40 rand num of different values to act as the snakes and ladder
   void setBoard();//Creates the linked list of size 100 to act as the board.
   void fillBoard();//Fills the board with generated snakes and ladders.
-  bool isSpecial(tile* pPos);//returns if tile is special
+  static bool isSpecial( tile* pPos);//returns if tile is special
   tile* getHead(){//Returns head for use in player class.
     return head;
   }
@@ -43,6 +46,8 @@ class Board{
     setBoard();
     fillBoard();
   };
+
+  ~Board();
   //tile* getStart();
 };
 
