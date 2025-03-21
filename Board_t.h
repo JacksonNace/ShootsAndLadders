@@ -1,6 +1,3 @@
-//I, Jackson Nace ID 2300153 worked with Hayden Vontz 2486072 on this project. Both of us are in the 8:30 section on T/TH
-
-
 #ifndef BOARD_H
 #define BOARD_H
 

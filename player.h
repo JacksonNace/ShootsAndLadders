@@ -1,8 +1,5 @@
-//I, Jackson Nace ID 2300153 worked with Hayden Vontz 2486072 on this project. Both of us are in the 8:30 section on T/TH
-
-
 #include <string>
-#include "board.h"
+#include "Board_t.h"
 
 
 #ifndef Player_H
@@ -14,7 +11,7 @@ through player. This is a friend class of board allowing access to the private e
 class Player
     {
     private:
-
+    Board* board;
     Board::tile* pos;//Holds the position of the player on the board.
     unsigned int sStat;//Number of times snakes were hit
     unsigned int lStat;//Number of times ladders were hit
@@ -34,7 +31,7 @@ class Player
     public:
 
 
-    Player(std::string pName, Board board);
+    Player(std::string pName, Board* board);
 
     void printStats();
 
@@ -43,7 +40,7 @@ class Player
 
     bool isFinished();//Returns true if player reaches end of board. Used to end game.
 
-    ~Player();//Deconstructor
+    //~Player();//Deconstructor
 
 
     
